@@ -1,7 +1,5 @@
 
-DROP TABLE IF EXISTS `carros`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+
 CREATE TABLE `carros` (
   `id_carros` int NOT NULL AUTO_INCREMENT,
   `modelo` varchar(100) NOT NULL,
@@ -10,15 +8,7 @@ CREATE TABLE `carros` (
   `ano` int DEFAULT NULL,
   `cor` varchar(10) NOT NULL,
   `status` enum('disponível','alugado','manutenção') DEFAULT 'disponível',
-  PRIMARY KEY (`id_carros`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-
---
-
---
-
-LOCK TABLES `carros` WRITE;
+  PRIMARY KEY (`id_carros`);
 
 INSERT INTO `carros` VALUES 
   (1,'Gol 1.0','Volkswagen','ABC1234',2020,'Prata','disponível'),
