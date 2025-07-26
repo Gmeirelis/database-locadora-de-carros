@@ -24,7 +24,6 @@ CREATE TABLE `clientes` (
   `email` varchar(200) DEFAULT NULL,
   `endereco` text,
   PRIMARY KEY (`id_clientes`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `clientes` VALUES (1,'Ana Souza','123.456.789-00','11987654321','ana@email.com','Rua das Flores, 100'),
   (2,'Carlos Lima','987.654.321-00','21912345678','carlos@email.com','Av. Brasil, 250'),
